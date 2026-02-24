@@ -168,68 +168,78 @@
     border-radius: 6px;
     font-size: 0.88rem; font-weight: 00;
 }
-/* ----------------------------------------------------------------------main content 1행*/
-#wrap main #intro {background-color: #F5F5F5;}
-#wrap main #intro #intro_wrap {
-    width: 1220px; 
-    margin: 0 auto;
-    padding: 70px 0;
-}
-/* #wrap main #intro #intro_wrap h1 {font-size: 1.5rem; font-weight: 500;} */
-#wrap main h1 {
-    font-size: 1.5rem; 
-    font-weight: 500;
-}
-#wrap main #tourist_attraction #tourist_attraction_title p,
-#wrap main #intro #intro_wrap p {
-    margin: 30px 0;
-    line-height: 170%;
-    color: #555555;
-}
-/* #wrap main #intro #intro_wrap p {
+/* ----------------------------------------------------------------------main 1행 intro*/
+#wrap main #intro_bg {background-color: #F5F5F5;}
+#wrap main #intro_bg #intro_wrap {}
+#wrap main #intro_bg #intro_wrap h1 {}
+#wrap main #tourist p,
+#wrap main #intro_bg #intro_wrap p {}
+/* #wrap main #intro_bg #intro_wrap p {
     margin: 30px 0;
 } */
-#wrap main #intro #intro_wrap a {}
-#wrap main #intro #intro_wrap a img {}
-#wrap main #intro #intro_wrap a img {}
-/* ----------------------------------------------------------------------main content 2행*/
-#wrap main #tourist_attraction {
-    /* background-color: aquamarine;  */
-    padding: 70px 0; 
-    width: 1220px; margin: 0 auto;
+#wrap main #intro_bg #intro_wrap a {}
+#wrap main #intro_bg #intro_wrap a img {width: 100%;}
+#wrap main #intro_bg #intro_wrap a img {}
+/* ----------------------------------------------------------------------main 2행 #tourist*/
+#wrap main #tourist {}
+#wrap main #tourist {}
+#wrap main #tourist h1 {}
+#wrap main #tourist p {margin: 20px 0;}
+#wrap main #tourist ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 80px;
 }
-#wrap main #tourist_attraction #tourist_attraction_title {}
-#wrap main #tourist_attraction #tourist_attraction_title h1 {}
-#wrap main #tourist_attraction #tourist_attraction_title p {margin: 20px 0;}
-#wrap main #tourist_attraction ul {
-    display: flex; 
-    flex-flow: row nowrap; 
-    justify-content: center;
-    /* gap: 20px; */
+#wrap main #tourist ul li {
+    width: calc((100% - (20 * 3))/ 4); 
 }
-/* #wrap main #tourist_attraction ul li:last-child {margin-right: 0px;} */
-#wrap main #tourist_attraction ul li {
-    /* width: calc(100% / 4); */
-    /* width: calc(100% - (20px * 3)); */
-    width: calc((100% - (30px * 3)) / 4) ;
-    margin-bottom: 30px;
-}
-#wrap main #tourist_attraction ul li > a {}
-#wrap main #tourist_attraction ul li > a img {}
-#wrap main #tourist_attraction ul li > a span {/* ------------------------------------------- */
-    width: 100%; height: 100%; 
-    background-color: blueviolet;
-    left: 0px; top: 0px;
-}
-#wrap main #tourist_attraction ul li > a h2 {
-    margin-top: 10px;
+#wrap main #tourist ul li h2 {
     font-size: 1.13rem;
     font-weight: 500;
 }
-#wrap main #tourist_attraction .more {
+#wrap main #tourist ul li a { 
+    display: block;
+    overflow: hidden; 
+    height: 250px;
+}
+#wrap main #tourist ul li a:hover img {width: 120%;}
+#wrap main #tourist ul li a img {width: 100%;}
+#wrap main .more {
     font-size: 0.94rem; 
-    display: block; 
-    text-align: center; 
-    margin-top: 50px;
-    text-decoration: underline;
+    margin: 0 auto; display: block;  width: max-content;
+    /* text-decoration: underline; 밑줄과 글자사이 여백 불가능 */
+    border-bottom: 1px solid #000;
+}
+/* ----------------------------------------------------------------------------main 3행 room */
+#wrap main #room_bg {background-color: #F5F5F5;}
+#wrap main #room_bg #room_wrap {}
+#wrap main #room_bg #room_wrap h1 {}
+#wrap main #room_bg #room_wrap p {}
+#wrap main #room_bg #room_wrap #room_list {
+    display: flex;
+    flex-flow: row nowrap;
+}
+#wrap main #room_bg #room_wrap #room_list li {}
+#wrap main #room_bg #room_wrap #room_list li a {}
+#wrap main #room_bg #room_wrap #room_list li a img {}
+#wrap main #room_bg #room_wrap #room_list li h2 {}
+#wrap main #room_bg #room_wrap #room_list li p {}
+/* ----------------------------------------------------------------------------footer */
+#wrap footer {}
+#wrap footer p {}
+/* --------------------------------------------------------------------main 공통 선택자 */
+#wrap main .container_layout,
+#wrap footer .container_layout {
+    padding: 70px 0; 
+    width: 1220px; margin: 0 auto;
+}
+#wrap main .container_layout h1 {
+    font-size: 1.5rem; 
+    font-weight: 500;
+}
+#wrap main .container_layout h1+p {
+    margin: 30px 0;
+    line-height: 1.7;
+    color: #555555;
 }
