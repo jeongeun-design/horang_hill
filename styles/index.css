@@ -234,21 +234,22 @@
 }
 /* ----------------------------------------------------------------------------main 4행 map */
 #wrap main #map {}
-#wrap main #map #map_title {}
+#wrap main #map #map_title {display: flex; justify-content: space-between; align-items: center;}
 #wrap main #map #map_title h1 {}
-#wrap main #map #map_title p {}
+#wrap main #map #map_title p {color: #000;}
 #wrap main #map a {}
 #wrap main #map a img {}
 #wrap main #map dl {
     padding-top: 30px;
 }
 #wrap main #map dl dt {
-    background-color: aqua;
     font-size: 1.5rem; font-weight: 700;
+    line-height: 1.8;
 }
 #wrap main #map dl dd {
     font-size: 0.94rem;
     line-height: 1.8;
+    padding-bottom: 20px;
 }
 
 /* ----------------------------------------------------------------------------footer */
