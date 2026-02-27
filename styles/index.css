@@ -195,6 +195,7 @@
     width: calc((100% - (20 * 3))/ 4); 
 }
 #wrap main #tourist ul li h2 {
+    margin-top: 8px;
     font-size: 1.13rem;
     font-weight: 500;
 }
