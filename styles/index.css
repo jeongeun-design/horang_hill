@@ -218,7 +218,7 @@
 #wrap main #room_bg #room_wrap p {}
 #wrap main #room_bg #room_wrap #room_list {
     display: flex;
-    flex-flow: row nowrap; justify-content: space-between;
+    flex-flow: row nowrap; justify-content: space-between; align-items: center;
 }
 #wrap main #room_bg #room_wrap #room_list li {width: calc((100% - (20 * 3))/ 4); }
 #wrap main #room_bg #room_wrap #room_list li a {}
