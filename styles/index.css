@@ -219,7 +219,7 @@
 #wrap main #room_bg #room_wrap p {}
 #wrap main #room_bg #room_wrap #room_list {
     display: flex;
-    flex-flow: row nowrap; justify-content: space-between; align-items: center; margin-bottom: 50px;
+    flex-flow: row nowrap; justify-content: space-between; align-items: center; margin-bottom: 70px;
 }
 #wrap main #room_bg #room_wrap #room_list li {width: calc((100% - (20 * 3))/ 4); }
 #wrap main #room_bg #room_wrap #room_list li a {}
@@ -232,6 +232,7 @@
 #wrap main #room_bg #room_wrap #room_list li p {
     font-size: 0.88rem;
     line-height: 1.7;
+    color: #555555;
 }
 /* ----------------------------------------------------------------------------main 4행 map */
 #wrap main #map {width: 1220px; margin: 0 auto}
