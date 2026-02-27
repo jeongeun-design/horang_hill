@@ -213,8 +213,8 @@
     border-bottom: 1px solid #000;
 }
 /* ----------------------------------------------------------------------------main 3행 room */
-#wrap main #room_bg {background-color: #F5F5F5;}
-#wrap main #room_bg #room_wrap {}
+#wrap main #room_bg {background-color: #F5F5F5; width: 100%;}
+#wrap main #room_bg #room_wrap {width: 1220px; margin: 0 auto;}
 #wrap main #room_bg #room_wrap h1 {}
 #wrap main #room_bg #room_wrap p {}
 #wrap main #room_bg #room_wrap #room_list {
