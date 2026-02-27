@@ -219,9 +219,18 @@
 #wrap main #room_bg #room_wrap p {}
 #wrap main #room_bg #room_wrap #room_list {
     display: flex;
-    flex-flow: row nowrap; justify-content: space-between; align-items: center; margin-bottom: 70px;
+    flex-flow: row nowrap; 
+    justify-content: space-between; align-items: center; 
+    margin-bottom: 70px;
 }
-#wrap main #room_bg #room_wrap #room_list li {width: calc((100% - (20 * 3))/ 4); }
+#wrap main #room_bg #room_wrap #room_list .room1 {}
+#wrap main #room_bg #room_wrap #room_list .room1 a {
+    display: block;
+    height: 350px; 
+    overflow: hidden;
+}
+#wrap main #room_bg #room_wrap #room_list .room1 a img {width: 100%;}
+#wrap main #room_bg #room_wrap #room_list li {width: calc((100% - (500 + (20px * 3))) / 4);}
 #wrap main #room_bg #room_wrap #room_list li a {}
 #wrap main #room_bg #room_wrap #room_list li a img {}
 #wrap main #room_bg #room_wrap #room_list li h2 {
