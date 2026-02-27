@@ -250,6 +250,7 @@
 #wrap main #map a {}
 #wrap main #map a img {}
 #wrap main #map dl {
+    color: #555555;
     padding-top: 30px;
 }
 #wrap main #map dl dt {
